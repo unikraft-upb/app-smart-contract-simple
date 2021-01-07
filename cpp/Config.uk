@@ -1,0 +1,11 @@
+menuconfig APPSMARTCONTRACTSIMPLE_DEPENDENCIES
+        bool "Simple smart contract application"
+        default y
+        select PLAT_KVM
+        select LIBUNWIND
+        select LIBCOMPILER_RT
+        select LIBCXXABI
+        select LIBCXX
+        select LIBNEWLIBC
+        select LIBLWIP
+        select LIBPOSIX_SYSINFO
