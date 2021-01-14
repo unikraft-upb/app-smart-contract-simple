@@ -19,10 +19,14 @@ For the C++ build you need to clone:
 * [lib-compiler-rt](https://github.com/unikraft/lib-compiler-rt)
 * [lib-newlib](https://github.com/unikraft/lib-newlib)
 
+Make sure that every repository is on the `staging` branch.
+
 All libraries must be cloned in the same folder.
 In each programming language subfolder (`c/`, `cpp/`) edit the `Makefile` file and update the variables to point to the correct location:
 * Update the `UK_ROOT` variable to point to the location of the Unikraft clone.
 * Update the `UK_LIBS` variable to point to the folder storing the library clones.
+
+If you get a `Cannot find library` error at one of the following steps, you may need to add the `lib-` prefix to the libraries listed in the `LIBS` variable. For instance, `$(UK_LIBS)/lwip` becomes `$(UK_LIBS)/lib-lwip`
 
 In each programming language folder, configure the builds by running:
 ```
