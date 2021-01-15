@@ -2,7 +2,7 @@
 
 This is a simple smart contract-like program running on Unikraft.
 It starts a server on port `12345` and waits for a integer (`4` bytes) to be received.
-It then replies with the incredemented value of the integer.
+It then replies with the incremented value of the integer.
 
 Currently the C and C++ builds are available working.
 
